@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #facc15;
+}
+
+.hero,
+.schedule-hero,
+.contact-hero {
+  background: url("img/elegant-gala-event-banner-red-carpets-chandelier-lights-329810296.webp") center/cover no-repeat;
+  color: rgb(15, 15, 15);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1,
+.schedule-hero h1,
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p,
+.schedule-hero p,
+.contact-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #080808;
+}
+
+.btn {
+  display: inline-block;
+  background: #9bfa15;
+  color: #1e3a8a;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #fbbf24;
+}
+
+.event-highlights {
+  background: #f9fafb;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.highlight-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h3,
+.event-highlights h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background: #1e3a8a;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.schedule-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: #1e3a8a;
+  color: white;
+}
+
+.schedule-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.schedule-table tr:hover {
+  background: #f1f5f9;
+}
+
+.highlight-session {
+  background: #fff8e1;
+  font-weight: bold;
+}
+
+.speaker-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.rsvp-form {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.rsvp-form input,
+.rsvp-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.rsvp-form button {
+  width: 100%;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.rsvp-form button:hover {
+  background: #0f2d6e;
+}
+
+.contact-info {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
