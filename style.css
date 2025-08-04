@@ -60,7 +60,7 @@ nav a.active {
 .hero,
 .schedule-hero,
 .contact-hero {
-  background: url("img/elegant-gala-event-banner-red-carpets-chandelier-lights-329810296.webp") center/cover no-repeat;
+  background: url("https://i.pinimg.com/736x/cd/2d/3c/cd2d3c529d1376a32913ed5688c2eb9f.jpg") center/cover no-repeat;
   color: rgb(15, 15, 15);
   text-align: center;
   padding: 100px 20px;
@@ -250,3 +250,4 @@ footer {
     margin-top: 10px;
   }
 }
+
